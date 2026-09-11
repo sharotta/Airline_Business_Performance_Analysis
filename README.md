@@ -159,7 +159,7 @@ The route-level analysis suggests that management should differentiate its respo
 - DAX - analytical measures and KPI calculations
 
 ## Data Source
-The dataset used in this analysis was synthetically generated using Python to simulate real-world aviation data challenges, including missing values, geographical data, and key business metrics.
+The dataset was generated using Python to represent flight-level aviation data, including routes, destinations, flight duration, altitude, fuel consumption, ticket prices, and passenger counts. The dataset also contains missing values across several operational and commercial fields, providing a basis for applying data preparation and validation techniques.
 
 ## What I Learned
 This project strengthened my understanding of how much analytical judgment happens before a dashboard is ever built.
