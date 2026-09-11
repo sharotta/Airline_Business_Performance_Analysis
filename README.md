@@ -16,10 +16,12 @@ Provides a view of flight-level commercial and operational performance across re
   - [Fuel Efficiency](#fuel-efficiency)
   - [Route Performance Patterns](#route-performance-patterns)
   - [Management Opportunities](#management-opportunities)
--[Dashboard & Business Insights](#dashboard--business-insights)
-- [Limitations](#limitations)
+- [Dashboard & Business Insights](#dashboard--business-insights)
 - [Business Recommendations](#business-recommendations)
+- [Tools & Technologies](#tools--technologies)
 - [What I Learned](#what-i-learned)
+- [Limitations](#limitations)
+
 
 ## Business Context
 Airline management needs to understand how different routes are performing commercially and operationally. Some routes may generate strong revenue and passenger demand but consume more fuel, while others may operate more efficiently but deliver weaker commercial returns.
@@ -65,24 +67,7 @@ The raw dataset contained several data quality issues that needed to be addresse
 - Calculated revenue and efficiency metrics required consistent and validated input values.
   
 ### Excel Preparation
-### Columns Created:
 Excel was used for initial data preparation and validation. This included reviewing the raw dataset, checking field completeness and data types, and preparing the ticket price data for use in the SQL analysis.
-- `Route` = `TakeOff_Location & " → " & Destination`
- ![Route](https://github.com/user-attachments/assets/1449bd25-de55-418a-9882-fa92b6ac021e)
- 
-- `Flight Revenue per Hour` = `Ticket_Price / Flight_Duration`
-  ![Price_Per_Hour](https://github.com/user-attachments/assets/292eb7ed-da11-40fe-9432-0a3f9997432a)
-
-- `Revenue` = `Ticket_Price * Passenger_Count`
-![Revenue](https://github.com/user-attachments/assets/5272699d-d825-43e5-bece-355c9b5274a0)
-
-- Conditional Formatting:
-![Conditional formating](https://github.com/user-attachments/assets/401220a9-f103-4c7c-b050-c6a7aacccc1b)
-- **High Fuel Use:** ≥ 3000  
-- **Medium:** 2600–2999  
-- **Low:** < 2600
-
-📌 Ticket_Price imputation was done in **Excel** using **median per Destination**, since the column failed in SQL import.
 
 ### SQL Preparation  
 SQL Server was then used to prepare the dataset for analysis by:
@@ -95,12 +80,6 @@ SQL Server was then used to prepare the dataset for analysis by:
 - Classifying routes into management categories based on commercial performance and fuel efficiency.
 
 The prepared SQL views were then connected to Power BI for analysis and visualization.
-
-## Tools & Technologies
-- Excel - initial data preparation and validation
-- SQL Server - data cleaning, transformation, metric creation, route-level aggregation, and business classification
-- Power BI - interactive dashboard development and business insights
-- DAX - analytical measures and KPI calculations
 
 ## Key Findings
 ### Network Benchmarks
@@ -175,11 +154,11 @@ The route-level analysis suggests that management should differentiate its respo
 
 * **Use route benchmarks as an ongoing management filter.** The four-category classification provides a practical starting point for prioritization: protect Core Performers, investigate Commercial Value routes with efficiency concerns, explore commercial opportunities on Efficient routes, and subject Priority Review routes to deeper investigation before strategic decisions are made.
 
-## Limitations
-* Operating cost data is not available, so the analysis evaluates **revenue and operational efficiency rather than profitability**.
-* Aircraft capacity is not provided, so passenger counts cannot be used to measure true capacity utilization.
-* Flight dates are not available, limiting the analysis to route and destination comparisons rather than changes in performance over time.
-* Missing values were imputed using route-level averages or destination-level median pricing, which may influence some calculated metrics.
+## Tools & Technologies
+- Excel - initial data preparation and validation
+- SQL Server - data cleaning, transformation, metric creation, route-level aggregation, and business classification
+- Power BI - interactive dashboard development and business insights
+- DAX - analytical measures and KPI calculations
 
 ## What I Learned
 This project strengthened my understanding of how much analytical judgment happens before a dashboard is ever built.
@@ -191,6 +170,14 @@ A key lesson was that **strong performance in one dimension does not necessarily
 The project also reinforced the importance of **benchmarks and business context**. Rather than simply ranking routes, I used network-level benchmarks to classify performance and translate the analysis into different management opportunities.
 
 Most importantly, I learned to be more deliberate about the difference between **what the data shows and what it allows me to conclude**. Observing a relationship between ticket prices and passenger demand, for example, does not establish that pricing caused the difference in demand. Good analysis requires knowing where the evidence ends and where further investigation is needed.
+
+## Limitations
+* Operating cost data is not available, so the analysis evaluates **revenue and operational efficiency rather than profitability**.
+* Aircraft capacity is not provided, so passenger counts cannot be used to measure true capacity utilization.
+* Flight dates are not available, limiting the analysis to route and destination comparisons rather than changes in performance over time.
+* Missing values were imputed using route-level averages or destination-level median pricing, which may influence some calculated metrics.
+
+
 
 
 																																																																																																																																																																																																																																																																	
