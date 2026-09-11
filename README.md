@@ -7,7 +7,7 @@ Provides a view of flight-level commercial and operational performance across re
 - [Questions I Wanted to Answer](#questions-i-wanted-to-answer)
 - [Data Preparation](#data-preparation)
   - [Data Preparation Challenges](#data-preparation)
-  - [Excel Preparation](#excel-preparation).
+  - [Excel Preparation](#excel-preparation)
   - [SQL Preparation](#sql-preparation)
 - [Key Findings](#key-findings)
   - [Network Benchmarks](#network-benchmarks)
@@ -19,6 +19,7 @@ Provides a view of flight-level commercial and operational performance across re
 - [Dashboard & Business Insights](#dashboard--business-insights)
 - [Business Recommendations](#business-recommendations)
 - [Tools & Technologies](#tools--technologies)
+- [Data Source](#data-source)
 - [What I Learned](#what-i-learned)
 - [Limitations](#limitations)
 
@@ -42,9 +43,6 @@ How can airline management identify which routes are performing well, which requ
 * Which routes combine strong commercial performance with fuel efficiency concerns?
 * Which routes appear efficient but may have opportunities for stronger commercial performance?
 * Which routes require priority management attention?
-
-## Data Source
-The dataset used in this analysis was synthetically generated using Python to simulate real-world aviation data challenges, including missing values, geographical data, and key business metrics.
 
 ## Analytical Approach
 The analysis evaluates route performance through four key areas:
@@ -159,6 +157,9 @@ The route-level analysis suggests that management should differentiate its respo
 - SQL Server - data cleaning, transformation, metric creation, route-level aggregation, and business classification
 - Power BI - interactive dashboard development and business insights
 - DAX - analytical measures and KPI calculations
+
+## Data Source
+The dataset used in this analysis was synthetically generated using Python to simulate real-world aviation data challenges, including missing values, geographical data, and key business metrics.
 
 ## What I Learned
 This project strengthened my understanding of how much analytical judgment happens before a dashboard is ever built.
