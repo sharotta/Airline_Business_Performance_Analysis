@@ -80,25 +80,30 @@ SQL Server was then used to prepare the dataset for analysis by:
 The prepared SQL views were then connected to Power BI for analysis and visualization.
 
 ## Key Findings
+
 ### Network Benchmarks
 The analysis uses the following network-level benchmarks as reference points for evaluating route performance:
 | Metric                     | Benchmark |
 | -------------------------- | --------: |
 | Average Revenue per Flight |   $44,965 |
 | Average Fuel per Passenger |     25.62 |
+<img width="868" height="485" alt="Executive Dashboard" src="https://github.com/user-attachments/assets/72946c2a-934b-4870-8eb3-5b97e95e582a" />
 
 ### Commercial Performance
 * **New York → Dubai** generated the highest revenue per flight at approximately **$60,750**, while **Chicago → Tokyo** generated the highest total route revenue at approximately **$2.36M**.
 * Several routes generated strong commercial returns while also showing higher-than-benchmark fuel consumption per passenger, indicating areas where commercial strength and operational efficiency need to be considered together.
+<img width="976" height="548" alt="Route   Market Performance" src="https://github.com/user-attachments/assets/3afd34f0-fb18-4ba3-997a-b4b0902aaefa" />
 
 ### Passenger Demand and Pricing
 * Passenger volumes varied considerably across destinations.
 * **Sydney** recorded the highest passenger volume, while **Dubai** had the highest average ticket price.
 * Within this dataset, destinations with higher average ticket prices generally recorded lower passenger volumes. This is an observed relationship, not evidence that higher prices caused lower demand.
+<img width="976" height="548" alt="Route   Market Performance" src="https://github.com/user-attachments/assets/3afd34f0-fb18-4ba3-997a-b4b0902aaefa" />
 
 ### Fuel Efficiency
 * **Miami → Sydney** recorded the highest fuel consumption per passenger at approximately **33.33**, making it a notable efficiency concern.
 * **New York → Dubai** generated strong revenue while maintaining relatively low fuel consumption per passenger, demonstrating stronger commercial and efficiency performance.
+<img width="976" height="546" alt="Fuel Operational Efficiency" src="https://github.com/user-attachments/assets/38f8da48-cc1c-44de-9955-1c2bc8b6371d" />
 
 ### Route Performance Patterns
 Routes were grouped into four management categories based on revenue per flight and fuel consumption per passenger:
@@ -106,6 +111,7 @@ Routes were grouped into four management categories based on revenue per flight 
 * **Commercial Value – Efficiency Concern:** Strong commercial performance but higher-than-benchmark fuel consumption.
 * **Efficient – Commercial Opportunity:** Better fuel efficiency but weaker commercial performance.
 * **Priority Review:** Below-benchmark commercial performance and higher-than-benchmark fuel consumption.
+<img width="868" height="488" alt="Management Opportunities " src="https://github.com/user-attachments/assets/3d33fcc6-b03c-45c2-858c-5fd13a7ce2b2" />
 
 ### Management Opportunities
 The route classification highlights four types of management opportunity:
@@ -115,11 +121,13 @@ The route classification highlights four types of management opportunity:
 | **Commercial Value – Efficiency Concern** | Protect commercial performance while investigating fuel efficiency.   |
 | **Efficient – Commercial Opportunity**    | Explore pricing, demand generation, or route frequency opportunities. |
 | **Priority Review**                       | Review route economics, passenger demand, and operational efficiency. |
+<img width="868" height="488" alt="Management Opportunities " src="https://github.com/user-attachments/assets/47aab464-73a1-4a0a-9610-8b328f73c17b" />
 
 These classifications help management move from simply identifying route performance differences to determining where further investigation or action may be warranted.
 
 ## Dashboard & Business Insights
 The dashboard shows route performance across commercial value, passenger demand, and operational efficiency, allowing comparison of routes and destinations to identify strong performance, areas of concern, and potential opportunities.
+
 1. How is the network performing overall?
 This provides a high-level view of revenue, passenger performance, route performance, and commercial value relative to fuel efficiency.
 
